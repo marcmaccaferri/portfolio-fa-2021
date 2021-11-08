@@ -7,13 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- TITLE TAG -->
     <title>Marc | Front End Web Developer</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <!-- HEADER START -->
     <header>
         <!-- Title that is clickable and brings you to index -->
-        <a href="index.html">
+        <a id="logo" href="index.html">
             <h1>Marc</h1>
             <h2>Front End Web Developer</h2>
         </a>
@@ -22,7 +29,7 @@
             <ul>
                 <li><a href="index.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="selected">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -43,10 +50,10 @@
             <!-- title -->
             <h3>Contact Information</h3>
             <!-- contact information -->
-            <ul>
-                <li><a href="tel:5021234567">(502) 123-4567</a></li>
-                <li><a href="mailto:username@email.com">username@email.com</a></li>
-                <li><a href="https://twitter.com" target="_blank">@username</a></li>
+            <ul class="contact-info">
+                <li class="phone"><a href="tel:5021234567">(502) 123-4567</a></li>
+                <li class="email"><a href="mailto:username@email.com">username@email.com</a></li>
+                <li class="twitter"><a href="https://twitter.com" target="_blank">@username</a></li>
             </ul>
         </section>
         <!-- END SECOND COLUMN -->
@@ -55,9 +62,11 @@
     <!-- FOOTER START -->
     <footer>
         <!-- Twitter link that is clickable, and that opens in a new tab -->
-        <a href="https://twitter.com" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter"></a>
+        <a href="https://twitter.com" target="_blank"><img class="social-icon" src="img/twitter-wrap.png"
+                alt="Twitter"></a>
         <!-- Facebook link that is clickable, and that opens in a new tab -->
-        <a href="https://facebook.com" target="_blank"><img src="img/facebook-wrap.png" alt="Facebook"></a>
+        <a href="https://facebook.com" target="_blank"><img class="social-icon" src="img/facebook-wrap.png"
+                alt="Facebook"></a>
         <!-- Copyright info -->
         <p>&copy; 2021 Marc</p>
     </footer>

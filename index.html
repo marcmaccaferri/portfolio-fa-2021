@@ -7,20 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- TITLE TAG -->
     <title>Marc | Front End Web Developer</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <!-- HEADER START -->
     <header>
         <!-- Title that is clickable and brings you to index -->
-        <a href="#">
+        <a id="logo" href="#">
             <h1>Marc</h1>
             <h2>Front End Web Developer</h2>
         </a>
         <!-- Navigation menu with 3 links -->
         <nav>
             <ul>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#" class="selected">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -30,7 +37,7 @@
 
     <!-- GALLERY START -->
     <div id="wrapper">
-        <ul>
+        <ul id="gallery">
             <li>
                 <img src="img/numbers-01.jpg" alt="Number 1">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -62,9 +69,11 @@
     <!-- FOOTER START -->
     <footer>
         <!-- Twitter link that is clickable, and that opens in a new tab -->
-        <a href="https://twitter.com" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter"></a>
+        <a href="https://twitter.com" target="_blank"><img class="social-icon" src="img/twitter-wrap.png"
+                alt="Twitter"></a>
         <!-- Facebook link that is clickable, and that opens in a new tab -->
-        <a href="https://facebook.com" target="_blank"><img src="img/facebook-wrap.png" alt="Facebook"></a>
+        <a href="https://facebook.com" target="_blank"><img class="social-icon" src="img/facebook-wrap.png"
+                alt="Facebook"></a>
         <!-- Copyright info -->
         <p>&copy; 2021 Marc</p>
     </footer>
